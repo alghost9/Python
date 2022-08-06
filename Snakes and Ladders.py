@@ -13,7 +13,7 @@ ladders = {4:14,9:31,20:38,21:42,28:84,36:44,51:67,71:91}
 snakes={16:6,47:26,49:30,62:19,63:60,87:24,93:73,95:75,98:78}
 
 player_list = []
-#number_of_players = int(input("How many players? "))
+
 
 player_has_won = False
 turn_number = 0
@@ -128,7 +128,7 @@ def run_game():
             list_by_turns.append({"turn":turn_number, "name":player_list[i]["name"], "position":player_list[i]["position"]})
             
     turns_list.append(turn_number)
-    #add the players positions after the turn to the list
+    
 
     print("game took " + str(turn_number) + " turns")
 
@@ -141,7 +141,7 @@ def play_x_games(games):
 def main():
 
     play_x_games(games)
-#print how many games were played so the average makes more sense
+
     print("Total Games played: " + str(games))
     print("Average number of turns: ~" + str(np.ceil((sum(turns_list) / len(turns_list)))))
     print("Shortest amount of turns: " + str(min(turns_list)))

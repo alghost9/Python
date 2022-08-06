@@ -2,7 +2,7 @@ import random
 import numpy as np
 import os
 
-Dice = int(input("How many sides on the dice? "))
+dice = int(input("How many sides on the dice? "))
 number_of_players = 4
 games = int(input("How many games do you want to simulate? "))
 player = {"name": " ", "position": 0}
@@ -36,7 +36,7 @@ def set_position(player_num, position):
     player_list[player_num]["position"] = position
 
 def roll_dice():
-    return random.randint(1,Dice)
+    return random.randint(1,dice)
 
 def player_turn(player_num):
     print(player_list[player_num]["name"] + "'s turn")

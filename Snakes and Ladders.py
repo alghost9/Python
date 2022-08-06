@@ -3,7 +3,7 @@ import numpy as np
 import os
 
 Dice = int(input("How many sides on the dice? "))
-number_of_players = int(input("How many players in each game? "))
+number_of_players = 4
 games = int(input("How many games do you want to simulate? "))
 player = {"name": " ", "position": 0}
 winner = {"name": " ", "turns": 0}

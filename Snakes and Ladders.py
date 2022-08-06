@@ -141,6 +141,7 @@ def main():
 
     play_x_games(games)
 
+    print("Dice number of faces: " + str(dice))
     print("Total Games played: " + str(games))
     print("Average number of turns: ~" + str(np.ceil((sum(turns_list) / len(turns_list)))))
     print("Shortest amount of turns: " + str(min(turns_list)))
